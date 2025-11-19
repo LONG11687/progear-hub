@@ -236,3 +236,33 @@ body {
     color: #0a2a63;
     font-weight: bold;
 }
+/* PRODUCT GRID STYLE FIX */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product-grid .item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.product-grid .item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    color: #0a2a63;
+    font-weight: bold;
+    margin-top: 8px;
+}
