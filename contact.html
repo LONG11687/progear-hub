@@ -71,18 +71,23 @@
 
     <h2 style="color:#0a2a63;">Send Us a Message</h2>
 
-    <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Enter your name">
+  <form action="process_contact.php" method="POST">
 
-        <label>Email:</label>
-        <input type="email" placeholder="Enter your email">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
 
-        <label>Your Message:</label>
-        <textarea rows="5" placeholder="Type your message here"></textarea>
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
 
-        <button>Send Message</button>
-    </form>
+    <label>Subject:</label>
+    <input type="text" name="subject" placeholder="Enter your subject" required>
+
+    <label>Your Message:</label>
+    <textarea rows="5" name="message" placeholder="Type your message here" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
 
     <div class="info-box">
         <h2 style="color:#0a2a63;">Contact Information</h2>
